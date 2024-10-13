@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #ffd966;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid #ffbf00;
+        }
+        .header h2 {
+            color: #ff9900;
+        }
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 150px);
+            padding: 20px;
+            justify-content: space-between;
+        }
+        .message-box {
+            background-color: #e6ffe6;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: left;
+            color: #4ca64c;
+        }
+        .message-box p {
+            margin: 5px 0;
+        }
+        .message-box img {
+            float: left;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        .input-box {
+            position: relative;
+            margin-top: 10px;
+        }
+        .input-box textarea {
+            width: calc(100% - 60px);
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            resize: none;
+        }
+        .input-box button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #ffbf00;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffd966;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Need Help? I'm Here for You!</h2>
+    </div>
+
+    <div class="chat-container">
+        <div class="message-box">
+            <img src="https://img.icons8.com/color/48/000000/chat.png" alt="ChatBot">
+            <p>Hello! I'm here to help you with any questions or information you need. How can I assist you today?</p>
+        </div>
+        
+        <div class="input-box">
+            <textarea rows="3" placeholder="Write Your Message Here"></textarea>
+            <button>
+                <img src="https://img.icons8.com/color/48/000000/send.png" alt="Send" width="30" height="30">
+            </button>
+        </div>
+    </div>
+
+   
+
+</body>
+</html>

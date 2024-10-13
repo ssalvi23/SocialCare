@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #a0d45c); /* Smooth gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .auth-container {
+            background-color: white;
+            padding: 70px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 106%;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="card login-card">
+            <h1>WELCOME BACK!!</h1>
+            <form id="loginForm">
+                <input type="text" id="login-id" placeholder="Enter your ID" required>
+                <input type="password" id="login-pass" placeholder="Enter your Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p><a href="register.html">Don't have an account? Register</a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const loginId = document.getElementById('login-id').value;
+            const loginPass = document.getElementById('login-pass').value;
+
+            // Check if the entered credentials match the hardcoded ones
+            if (loginId === 'sakshi' && loginPass === 'sakshi') {
+                window.location.href = 'socialcare.html';  // Redirect to home page
+            } else {
+                alert('Invalid credentials, please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
