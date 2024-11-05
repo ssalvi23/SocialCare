@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="styles/regStyle.css   ">
+    <link rel="stylesheet" href="styles/regStyle.css">
 </head>
 <body>
     <div class="auth-container">
@@ -17,18 +17,25 @@
                 <input type="password" placeholder="Enter your password" required>
                 
                 <div class="gender-selection">
-                    <label for="male">Male</label>
                     <input type="radio" name="gender" value="male" id="male">
-                    <label for="female">Female</label>
+                    <label for="male">Male</label>
                     <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
                 </div>
                 
                 <input type="text" placeholder="Enter your PIN Code" required>
+                
                 <button type="submit">Register</button>
             </form>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('registerForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevents default form submission
+            window.location.href = 'login.html'; // Ensure this path is correct
+        };
+    </script>
 </body>
 </html>
+ 

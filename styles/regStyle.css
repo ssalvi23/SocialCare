@@ -84,9 +84,7 @@ form button:hover {
     margin-right: 10px;
 }
 
-.gender-selection input[type="radio"] {
-    margin-left: 5px;
-}
+
 
 /* Adding some nature-inspired graphics */
 .card::before {
